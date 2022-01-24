@@ -1,15 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+body {
+    
+    font-family: 'Poppins', sans-serif;
+}
   .carousel-control-next, .carousel-control-prev {
       opacity: 0.5;
       border: none;
        visibility: hidden;
       
-  }
-
+}
+.link{
+    text-decoration: none;
+}
   .carousel-control-next:hover,.carousel-control-prev:hover {
     visibility: visible;
   
-  }
+}
 
   .card {
     border: none;
@@ -37,6 +44,8 @@
     backface-visibility: hidden;
     will-change: transform;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, .75) !important;
+    transition: 0.5s;
+    cursor: pointer;
 }
 .list-group-item {
     color: black;
@@ -56,9 +65,6 @@
 }
 
 
-body {
-    font-family: 'Lato', sans-serif;
-}
 
 .middle-container {
     max-width: 800px;
