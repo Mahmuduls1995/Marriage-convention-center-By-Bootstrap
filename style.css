@@ -1,19 +1,107 @@
 
-  /* .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
-    text-decoration: none;
-    opacity: 0;
+  .carousel-control-next, .carousel-control-prev {
+      opacity: 0.5;
+      border: none;
+       visibility: hidden;
+      
+  }
+
+  .carousel-control-next:hover,.carousel-control-prev:hover {
+    visibility: visible;
   
   }
-  .carousel-control-next, .carousel-control-prev {
+
+  .card {
+    border: none;
+}
+
+.card-body {
+    height: 60%;
+}
+
+.card::after {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 15%;
-    text-align: center;
+    z-index: -1;
     opacity: 0;
-    transition: .15s ease;
-  } */
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+.card:hover {
+    border-radius: 30px;
+    color: white;
+    background: #3F87F5;
+    transform: scale(1.02, 1.02);
+    -webkit-transform: scale(1.02, 1.02);
+    backface-visibility: hidden;
+    will-change: transform;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .75) !important;
+}
+.list-group-item {
+    color: black;
+}
+.list-group-item:hover {
+    background: #007bff;
+}
+
+.card:hover::after {
+    opacity: 1;
+}
+
+
+.card:hover .btn-outline-primary {
+    color: white;
+    background: #007bff;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.middle-container {
+    max-width: 800px;
+    background-color:rgb(223, 217, 217);
+    margin: 0 auto;
+    padding-bottom: 10%;
+}
+.font{
+    font-weight: 400;
+}
+h1 {
+    margin-bottom: 40px;
+}
+
+label {
+    color: #333
+}
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 80%;
+    margin-left: 3px
+}
+
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px
+}
+
+.card-contact {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card-contact:hover {
+    border-radius: 30px;
+    color: white;
+    background: #3F87F5;
+    transform: scale(1.02, 1.02);
+    -webkit-transform: scale(1.02, 1.02);
+    backface-visibility: hidden;
+    will-change: transform;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .75) !important;
+}
