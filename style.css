@@ -58,7 +58,9 @@ body {
     opacity: 1;
 }
 
-
+.font{
+    font-weight: 400;
+}
 .card:hover .btn-outline-primary {
     color: white;
     background: #007bff;
@@ -72,9 +74,7 @@ body {
     margin: 0 auto;
     padding-bottom: 10%;
 }
-.font{
-    font-weight: 400;
-}
+
 h1 {
     margin-bottom: 40px;
 }
